@@ -10,6 +10,7 @@ const App = () => {
 
   const dispatch = useDispatch();
 
+  //Once the getCatsFetch was completed it will call the saga function
   useEffect(() => {
     dispatch(getCatsFetch());
   }, [dispatch]);
